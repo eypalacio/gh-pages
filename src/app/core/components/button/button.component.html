@@ -1,0 +1,12 @@
+<ng-container *ngFor="let button of button.buttons">
+    <p-button 
+        (click)="click(button.function)" 
+        [icon]="button.icon" 
+        [autofocus]="false"
+        [loading]="loadingButton(button.loading)" 
+        [rounded]="button.style === 'btn-icon'"
+        [disabled]="(button.disabled ? button.disabled : false) || disabledButton(button.disabledButton)"
+        [label]="button.label"
+        [styleClass]="(button.style === 'btn-icon'?'w-3rem h-3rem border-none bg-transparent hover:bg-bluegray-600':'')+' '+(button.style === 'btn-primary'?'py-3 px-3 ml-2 border-round-lg bg-primary-600 hover:bg-primary-700':'')">
+    </p-button>
+</ng-container>

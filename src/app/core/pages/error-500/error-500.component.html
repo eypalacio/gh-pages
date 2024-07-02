@@ -1,0 +1,11 @@
+<div class="w-full h-full flex flex-column justify-content-center align-items-center">
+    <img class="w-5 xl:w-3" [src]="urlIMG" alt="">
+    <p class="text-xl">
+        <span class="font-italic font-semibold text-xl text">Error de conexión con el Servidor.</span> Verifique que el
+        servidor no se encuentre apagado.
+    </p>
+    <p class="text-lg mt-0">
+        Se recargará de forma automática en {{counter}} segundos
+    </p>
+    <app-button [button]="button"></app-button>
+</div>

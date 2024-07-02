@@ -1,0 +1,8 @@
+<app-table [table]="table" *ngIf="table">
+    <form [formGroup]="formGroup" class="filter w-full flex gap-2">
+        <p-dropdown formControlName="tipoMensaje" appendTo="body" [options]="tipoMensajeList" [showClear]="true" optionLabel="name" optionValue="code" placeholder="Tipo"></p-dropdown>
+        <p-dropdown formControlName="hora" appendTo="body" [options]="horas" optionLabel="name" [showClear]="true" optionValue="code" placeholder="Horas"></p-dropdown>
+        <p-calendar formControlName="date" appendTo="body" [maxDate]="maxDate" [showIcon]="true" [iconDisplay]="'input'" placeholder="Fecha"></p-calendar>
+    </form>
+</app-table>
+<!-- {{notificationsSub$ | async | json}} -->

@@ -1,0 +1,10 @@
+<div class="h-96 overflow-hidden">    
+    <app-table [table]="table" *ngIf="table">
+        <div  class="flex justify-content-end w-full search -mt-6 mb-4 px-4">
+        <span class="p-input-icon-right">
+            <i class="bi bi-search"></i>
+            <input type="text" pInputText [(ngModel)]="value" (ngModelChange)="filterTable()" />
+        </span>
+    </div>
+    </app-table>
+</div>

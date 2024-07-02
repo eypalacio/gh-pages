@@ -1,0 +1,8 @@
+<div class="flex gap-2 absolute top-0 bottom-0 left-0 right-0">
+    <div class="flex-1 overflow-hidden">
+        <app-mt299 [execETL]="execETL"></app-mt299>
+    </div>
+    <div class="flex-1 overflow-hidden">
+        <app-mt206 (execETL)="executedETL()"></app-mt206>
+    </div>
+</div>
